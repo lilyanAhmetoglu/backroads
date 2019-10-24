@@ -31,7 +31,7 @@
             })}
         </div>
         <div className={styles.copyright}>
-            copyright &copy; backroads Lilyan travel company {new Date().getFullYear()} all
+            copyright &copy; Qimia Istnbul Tour {new Date().getFullYear()} all
             rights reserved
         </div>
         </footer>

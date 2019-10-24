@@ -5,5 +5,10 @@
  */
 
 module.exports = {
+  siteMetadata:{
+    title:"Qimia Istanbul Tour",
+    description:"Explor istanbul us",
+    author:"Lilyan Ahmetoğlu"
+  },
   plugins: [`gatsby-plugin-sass`, `gatsby-plugin-styled-components`],
 }
