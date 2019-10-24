@@ -4,14 +4,14 @@ import styles from "./css/navbar.module.css"
 import { FaAlignRight } from "react-icons/fa"
 import links from "../constans/links"
 import socialIcons from "../constans/social-icons"
-import logo from "../images/logo.svg"
+import logo from "../images/logo.png"
 
 const NavBar = () => {
   //const [isOpen, setNav] = useState()
   return (<nav className={styles.navbar}>
     <div className={styles.navCenter}>
       <div className={styles.navHeader}>
-        <img src={logo} alt="backroads logo" />
+        <img className={styles.mainLogo} src={logo} alt="Qimia Istanbul Tour logo" />
         <button type="button" className={styles.logoBtn}>
           <FaAlignRight className={styles.logoIcon} />
         </button>

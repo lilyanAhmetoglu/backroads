@@ -5,10 +5,15 @@
   align-items: center;
   padding: 1rem 1.25rem;
 }
+
 .logo-btn {
   background: transparent;
   border: none;
   outline: none;
+
+}
+.main-logo{
+  width: 70%;
 }
 .logo-btn:hover {
   cursor: pointer;
