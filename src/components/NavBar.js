@@ -1,13 +1,13 @@
-import React, { useState } from "react"
+import React,{ useState } from "react"
 import { Link } from "gatsby"
 import styles from "./css/navbar.module.css"
 import { FaAlignRight } from "react-icons/fa"
 import links from "../constans/links"
 import socialIcons from "../constans/social-icons"
 import logo from "../images/logo.svg"
+
 const NavBar = () => {
-
-
+  const [isOpen, setNav] = useState()
   return (<nav className={styles.navbar}>
     <div className={styles.navCenter}>
       <div className={styles.navHeader}>
