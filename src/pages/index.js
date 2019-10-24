@@ -1,14 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
-
+import SimpleHero from "../components/SimpleHero"
+import Banner from "../components/Banner"
 export default () => (
   <>
     <Layout>
-      <div>
-        Hello world! 
-        <Link to="/blog"> blog</Link>
-      </div>
+      <SimpleHero>
+        <Banner title="Continue exploring" info="Backroads Lilyan Company..">
+          <Link to="/tours" className="btn-white">explore tours</Link>
+        </Banner>
+      </SimpleHero>
     </Layout>
   </>
 )

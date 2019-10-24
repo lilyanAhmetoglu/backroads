@@ -7,7 +7,7 @@ import socialIcons from "../constans/social-icons"
 import logo from "../images/logo.svg"
 
 const NavBar = () => {
-  const [isOpen, setNav] = useState()
+  //const [isOpen, setNav] = useState()
   return (<nav className={styles.navbar}>
     <div className={styles.navCenter}>
       <div className={styles.navHeader}>

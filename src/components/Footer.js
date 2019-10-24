@@ -1,11 +1,41 @@
-import React from 'react'
-
-const Footer = () => {
+    import React from "react"
+    import styles from "../components/css/footer.module.css"
+    import links from "../constans/links"
+    import socialIcons from "../constans/social-icons"
+    import { Link } from "gatsby"
+    import { FaRProject } from "react-icons/fa"
+    const Footer = () => {
     return (
-        <div>
-            <h1>hi i am the Footer</h1>
+        <footer className={styles.footer}>
+        <div className={styles.links}>
+            {links.map((item, index) => {
+            return (
+                <Link key={index} to={item.mpat}>
+                {item.text}
+                </Link>
+            )
+            })}
         </div>
+        <div className={styles.icons}>
+            {socialIcons.map((item, index) => {
+            return (
+                <a
+                key={index}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                {item.icon}
+                </a>
+            )
+            })}
+        </div>
+        <div className={styles.copyright}>
+            copyright &copy; backroads Lilyan travel company {new Date().getFullYear()} all
+            rights reserved
+        </div>
+        </footer>
     )
-}
+    }
 
-export default Footer
+    export default Footer
