@@ -11,18 +11,14 @@ const NavBar = () => {
   const toggleNav = () => {
     setNav(isOpen => !isOpen)
   }
-  //const [isOpen, setNav] = useState()
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <img
-            className={styles.mainLogo}
-            src={logo}
-            alt="Qimia Istanbul Tour logo"
-          />
-          <button type="button" className={styles.logoBtn}>
-            <FaAlignRight className={styles.logoIcon} onClick={toggleNav}></FaAlignRight> />
+          <img src={logo} alt="backroads logo" />
+          <button type="button" className={styles.logoBtn} onClick={toggleNav}>
+            <FaAlignRight className={styles.logoIcon} />
           </button>
         </div>
         <ul
