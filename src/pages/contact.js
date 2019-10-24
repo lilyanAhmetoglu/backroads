@@ -36,8 +36,8 @@ const contact = () => {
             <div class="contact_message content">
               <h3>contact us</h3>
               <p>
-                Hello Qimia Team, if you faced any problem during the tour
-                please feel free to contact one of Istanbul Office team down
+                Hello Qimia Team, if you faced any problem during the trip
+                please feel free to contact one of Istanbul Office's team member down
                 below. Have fun
               </p>
               <ul>
