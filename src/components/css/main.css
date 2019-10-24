@@ -50,6 +50,14 @@ a {
   justify-content: center;
   align-items: center;
 }
+.pageshero{
+  min-height: calc(50vh);
+  background: linear-gradient(#f1af12, rgba(0, 0, 0, 0.7)),
+    url("../../images/defaultBcg.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .btn-white,
 .btn-primary {
   text-transform: uppercase;
@@ -82,4 +90,50 @@ main {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.map {
+  padding-bottom: 35px;
+
+  display: contents;
+}
+ .map .mapouter {
+  position: relative;
+  text-align: right;
+  height: 350px;
+
+ }
+
+ .map .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 350px;
+  width: 100%;
+}
+.map .gmap_canvas iframe {
+  width: 100%;
+}
+.contact_message h3 {
+  font-size: 21px;
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+.contact_message p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+ul{
+list-style: outside none none;
+margin: 0;
+padding: 0;
+}
+.contact_message ul li {
+  padding: 13px 0;
+  border-top: 1px solid #ebebeb;
+}
+.contact_message ul li i {
+  margin-right: 10px;
 }

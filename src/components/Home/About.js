@@ -15,6 +15,7 @@ query homeImage {
   }
 }`
 
+
 const About = () => {
   const {homeImage} = useStaticQuery(getHome)
   return (
