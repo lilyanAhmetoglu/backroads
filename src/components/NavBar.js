@@ -22,7 +22,7 @@ const NavBar = () => {
             alt="Qimia Istanbul Tour logo"
           />
           <button type="button" className={styles.logoBtn}>
-            <FaAlignRight className={styles.logoIcon} />
+            <FaAlignRight className={styles.logoIcon} onClick={toggleNav}></FaAlignRight> />
           </button>
         </div>
         <ul
