@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.25rem;
+  
 }
 
 .logo-btn {
@@ -11,6 +12,9 @@
   border: none;
   outline: none;
 
+}
+nav{
+  overflow-x: auto !important;
 }
 .main-logo{
   width: 70%;
@@ -24,6 +28,8 @@
 }
 
 .nav-links {
+  overflow-x: auto;
+  display: inline-flex;
   list-style-type: none;
   transition: var(--mainTransition);
   /*height: 0;
@@ -53,7 +59,12 @@
     padding: 0 2rem;
   }
 }
-
+@media screen and (max-width:575px){
+  .main-logo{
+    width: 70%;
+    margin: auto !important;
+  }
+}
 @media screen and (min-width: 992px) {
   .logo-btn {
     display: none;

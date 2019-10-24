@@ -1,5 +1,8 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import {Link} from "gatsby"
+import {graphql } from 'gatsby'
+
 
 const blog = () => {
     return (
