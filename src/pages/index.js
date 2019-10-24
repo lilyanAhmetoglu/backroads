@@ -11,7 +11,7 @@ export default () => (
         <Banner title="Welcome Qimia" info="Hello QIMIA and welcome to Istanbul,">
           <Link to="/tours" className="btn-white">explore tours</Link>
         </Banner>
-      </SimpleHero>ü
+      </SimpleHero>
       <About />
     </Layout>
   </>
