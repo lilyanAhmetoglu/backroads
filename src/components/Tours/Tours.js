@@ -13,7 +13,7 @@ const getTours = graphql`
           slug
           gallery {
             fluid {
-                ...GatsbyContentfulFluid_tracedSVG
+                ...GatsbyContentfulFluid
             }
           }
         }
