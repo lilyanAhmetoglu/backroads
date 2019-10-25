@@ -1,5 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Layout from "../components/Layout"
+import StyledHero from "../components/StyledHero"
+import Banner from "../components/Banner"
+import styles from "../components/css/template.module.css"
+import Img from "gatsby-image"
+import {Link} from 'gatsby'
+import Day from "../components/SingleTour/Day"
 const Template = ({ data }) => {
   const {
     title,
@@ -13,7 +20,46 @@ const Template = ({ data }) => {
   console.log(mainImage)
   console.log(tourImages)
 
-  return <h1>{title}</h1>
+  return (
+    <Layout>
+      <StyledHero>
+        <Banner
+          title="Tours"
+          info="Check Our Qimia special tours program"
+        ></Banner>
+      </StyledHero>
+      <section className={styles.template}>
+        <div className={styles.center}>
+          <div className={styles.images}>
+            {tourImages.map((item, index) => {
+              return (
+                <Img
+                  key={index}
+                  fluid={item.fluid}
+                  alt="single tour"
+                  className={styles.image}
+                />
+              )
+            })}
+          </div>
+          <h2>{title}</h2>
+          
+
+          <h4>Day : {day}</h4>
+          <p className={styles.desc}>{description}</p>
+          <h2>daily schedule</h2>
+          <div className={styles.schedual}>
+            {schedual.map((item, index) => {
+              return <Day key={index} time={item.time} info={item.info} />
+            })}
+          </div>
+          <Link fade to="/tours" className="btn-primary">
+            back to tours
+          </Link>
+        </div>
+      </section>
+    </Layout>
+  )
 }
 
 export const query = graphql`
@@ -30,7 +76,7 @@ export const query = graphql`
       }
       gallery {
         fluid {
-          src
+          ...GatsbyContentfulFluid
         }
       }
     }
