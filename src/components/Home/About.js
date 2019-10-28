@@ -2,7 +2,7 @@ import React from "react"
 import Title from "../Title"
 import styles from "../css/about.module.css"
 
-import {useStaticQuery, graphql } from 'gatsby'
+import {useStaticQuery, graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 const getHome = graphql`
 query homeImage {
@@ -39,9 +39,7 @@ const About = () => {
            So <b>Qimia</b> we are ready to show you the best places in our city, are you ready?
            stay tuned and let's have fun together :)
           </p>
-          <button type="button" className="btn-primary">
-            read more
-          </button>
+
         </article>
       </div>
     </section>

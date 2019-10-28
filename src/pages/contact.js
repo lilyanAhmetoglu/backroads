@@ -42,7 +42,7 @@ const contact = () => {
               </p>
               <ul>
                 <li>
-                  <b>hotel Address</b> : MERCURE ISTANBUL THE PLAZA BOSPHORUS
+                  <b>Hotel Address</b> : MERCURE ISTANBUL THE PLAZA BOSPHORUS
                   Barbaros Bulvari No 165 Balmumcu Besiktas, 34349 Istanbul
                 </li>
                 <li>
