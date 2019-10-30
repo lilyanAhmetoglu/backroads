@@ -2,6 +2,9 @@
   padding: 4rem 0;
  
 }
+img{
+  width: 100% !important;
+}
 .center {
   width: 80vw;
   margin: 0 auto;
@@ -14,6 +17,7 @@
   margin-bottom: 2rem;
 }
 .image {
+  
   box-shadow: var(--lightShadow);
 }
 .template h2 {
