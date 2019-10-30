@@ -16,20 +16,6 @@
             )
             })}
         </div>
-        <div className={styles.icons}>
-            {socialIcons.map((item, index) => {
-            return (
-                <a
-                key={index}
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                {item.icon}
-                </a>
-            )
-            })}
-        </div>
         <div className={styles.copyright}>
             copyright &copy; Qimia Istnbul Tour {new Date().getFullYear()} all
             rights reserved
