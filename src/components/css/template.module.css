@@ -16,9 +16,7 @@ img{
   grid-row-gap: 1rem;
   margin-bottom: 2rem;
 }
-.image {
-  
-  
+.image { 
   box-shadow: var(--lightShadow);
 }
 .template h2 {
