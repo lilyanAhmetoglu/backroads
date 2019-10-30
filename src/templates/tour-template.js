@@ -79,6 +79,7 @@ const Template = ({ data }) => {
             })}
           </div>
           <div className={styles.contentContainer}>
+            
             <h2>{title}</h2>
             <h4>Day : {day}</h4> 
             {documentToReactComponents(json, options)}
