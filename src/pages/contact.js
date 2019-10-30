@@ -46,13 +46,13 @@ const contact = () => {
                   Barbaros Bulvari No 165 Balmumcu Besiktas, 34349 Istanbul
                 </li>
                 <li>
-                  <b>Eren:</b> +90 542 412 02 31
+                  <b>Eren Onay:</b> +90 542 412 02 31
                 </li>
                 <li>
-                  <b>Ata:</b> +90 536 772 93 92
+                  <b>Ata Alkan:</b> +90 536 772 93 92
                 </li>
                 <li>
-                  <b>Lilyan:</b> +90 553 384 08 94
+                  <b>Lilyan Ahmetoğlu:</b> +90 553 384 08 94
                 </li>
               </ul>
             </div>

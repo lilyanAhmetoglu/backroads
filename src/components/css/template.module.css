@@ -47,10 +47,18 @@
 .journey {
   margin: 3rem 0;
 }
+.content-container{
+  padding-left:10%;
+  padding-right:10%
+}
 @media screen and (min-width: 992px) {
   .journey,
   .desc {
     width: 70vw;
+  }
+  .content-container{
+    padding-left:10%;
+    padding-right:10%
   }
 }
 @media screen and (min-width: 1200px) {
@@ -62,4 +70,12 @@
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     grid-column-gap: 50px;
   }
+  
+}
+@media screen and (max-width: 760px) {
+  .content-container{
+    padding-left:3%;
+    padding-right:3%
+  }
+  
 }

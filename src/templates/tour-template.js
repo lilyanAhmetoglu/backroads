@@ -5,7 +5,7 @@ import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner"
 import styles from "../components/css/template.module.css"
 import Img from "gatsby-image"
-import {Link} from 'gatsby'
+import { Link } from "gatsby"
 import Day from "../components/SingleTour/Day"
 const Template = ({ data }) => {
   const {
@@ -42,20 +42,20 @@ const Template = ({ data }) => {
               )
             })}
           </div>
-          <h2>{title}</h2>
-          
-
-          <h4>Day : {day}</h4>
-          <p className={styles.desc}>{description}</p>
-          <h2>daily schedule</h2>
-          <div className={styles.schedual}>
-            {schedual.map((item, index) => {
-              return <Day key={index} time={item.time} info={item.info} />
-            })}
+          <div className={styles.contentContainer}>
+            <h2>{title}</h2>
+            <h4>Day : {day}</h4>
+            <p className={styles.desc}>{description}</p>
+            <h2>Activities schedule</h2>
+            <div className={styles.schedual}>
+              {schedual.map((item, index) => {
+                return <Day key={index} time={item.time} info={item.info} />
+              })}
+            </div>
+            <Link fade to="/tours" className="btn-primary">
+              back to tours
+            </Link>
           </div>
-          <Link fade to="/tours" className="btn-primary">
-            back to tours
-          </Link>
         </div>
       </section>
     </Layout>
