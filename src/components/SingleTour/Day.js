@@ -8,13 +8,15 @@ const Day = ({ time, info }) => {
   }
   return (
     <article className={styles.day}>
+       <button className={styles.btn} onClick={toggleInfo}>
       <h4>
         {time}
-        <button className={styles.btn} onClick={toggleInfo}>
+       
           <FaAngleDown />
-        </button>
+        
       </h4>
-      {showInfo && <p>{info}</p>}
+      </button>
+      {showInfo && <p><b>{info}</b></p>}
     </article>
   )
 }
