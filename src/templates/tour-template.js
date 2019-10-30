@@ -112,6 +112,9 @@ export const query = graphql`
         time
         info
       }
+      text {
+        json
+      }
       gallery {
         fluid {
           ...GatsbyContentfulFluid
