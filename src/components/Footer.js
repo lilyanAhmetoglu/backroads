@@ -17,7 +17,7 @@
             })}
         </div>
         <div className={styles.copyright}>
-            copyright &copy; Qimia Istnbul Tour {new Date().getFullYear()} all
+            copyright &copy; Qimia Istanbul Tour {new Date().getFullYear()} all
             rights reserved
         </div>
         </footer>
