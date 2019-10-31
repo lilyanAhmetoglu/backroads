@@ -6,7 +6,6 @@ const Day = ({ time, info }) => {
   const toggleInfo = () => {
     setInfo(showInfo => !showInfo)
   }
-  
   return (
     <article className={styles.day}>
       <p>
