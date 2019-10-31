@@ -9,9 +9,9 @@ const Day = ({ time, info }) => {
   return (
     <article className={styles.day}>
      
-      <h6>
+      <p>
       <b><span className="main-color">{time} :</span> {info}</b>      
-      </h6>
+      </p>
       <hr></hr>
       
     </article>
