@@ -73,6 +73,9 @@ a {
   background: var(--mainWhite);
   color: var(--primaryColor);
 }
+.main-color{
+  color:var(--primaryColor);
+}
 .btn-primary {
   background: var(--primaryColor) !important;
   color: var(--mainWhite) !important;

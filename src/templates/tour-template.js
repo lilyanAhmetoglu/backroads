@@ -66,7 +66,7 @@ const Template = ({ data }) => {
       </StyledHero>
       <section className={styles.template}>
         <div className={styles.center}>
-          <div className={styles.images}>
+        <div className={styles.images}>
             {tourImages.map((item, index) => {
               return (
                 <Img
@@ -79,19 +79,21 @@ const Template = ({ data }) => {
             })}
           </div>
           <div className={styles.contentContainer}>
-            <h2>{title}</h2>
-            <h4>Day : {day}</h4> 
-            {documentToReactComponents(json, options)}
-            <h2>Activities schedule</h2>
+            <h2>{title} / Day : {day}</h2>
+           
+            <h3>Activities schedule</h3>
             <div className={styles.schedual}>
               {schedual.map((item, index) => {
                 return <Day key={index} time={item.time} info={item.info} />
               })}
             </div>
+            {documentToReactComponents(json, options)}
+            
             <Link fade to="/tours" className="btn-primary">
               back to tours
             </Link>
           </div>
+          
         </div>
       </section>
     </Layout>
