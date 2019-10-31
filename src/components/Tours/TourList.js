@@ -14,7 +14,6 @@ export default class TourList extends Component {
         sortedTours: this.props.tours.edges,
       })
     }
-  
     render() {
       return (
         <section className={styles.tours}>

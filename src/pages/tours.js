@@ -10,7 +10,7 @@ export default class tours extends Component {
       <Layout>
         <StyledHero>
           <Banner
-            title="Our Schedual"
+            title="Our schedule"
             info="Check out our program"
           ></Banner>
         </StyledHero>
