@@ -9,7 +9,7 @@ export default () => (
     <Layout>
       <SimpleHero>
         <Banner title="Welcome To Istanbul" info="Qimia Anniversary Event, Istanbul/ 1-3 November">
-          <Link to="/tours" className="btn-white">explore tours</Link>
+          <Link to="/tours" className="btn-white">Our Schedual</Link>
         </Banner>
       </SimpleHero>
       <About />
