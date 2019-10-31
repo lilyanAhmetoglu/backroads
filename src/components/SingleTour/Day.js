@@ -8,12 +8,12 @@ const Day = ({ time, info }) => {
   }
   return (
     <article className={styles.day}>
-     
       <p>
-      <b><span className="main-color">{time} :</span> {info}</b>      
+        <b>
+          <span className="main-color">{time} :</span> {info}
+        </b>
       </p>
       <hr></hr>
-      
     </article>
   )
 }
