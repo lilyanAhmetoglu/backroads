@@ -81,7 +81,7 @@ const Template = ({ data }) => {
           <div className={styles.contentContainer}>
             <h2>{title} / Day : {day}</h2>
            
-            <h3>Activities schedule</h3>
+            <h3>Activities Schedule</h3>
             <div className={styles.schedual}>
               {schedual.map((item, index) => {
                 return <Day key={index} time={item.time} info={item.info} />
@@ -90,7 +90,7 @@ const Template = ({ data }) => {
             {documentToReactComponents(json, options)}
             
             <Link fade to="/tours" className="btn-primary">
-              back to tours
+              Back to tours
             </Link>
           </div>
           
