@@ -97,7 +97,6 @@ const Template = ({ data }) => {
         </div>
       </section>
     </Layout>
-    
   )
 }
 
