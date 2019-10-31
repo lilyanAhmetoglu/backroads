@@ -12,7 +12,7 @@ export default () => (
           <Link to="/tours" className="btn-white">Our Schedual</Link>
         </Banner>
       </SimpleHero>
-      <About />
+     
     </Layout>
   </>
 )

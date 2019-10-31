@@ -5,7 +5,7 @@
     },
     {
         path: "/tours",
-        text: "tours",
+        text: "Event",
     },
     {
         path: "/blog",

@@ -10,8 +10,8 @@ export default class tours extends Component {
       <Layout>
         <StyledHero>
           <Banner
-            title="Tours"
-            info="Check Our Qimia special tours program"
+            title="Our Schedual"
+            info="Check out our program"
           ></Banner>
         </StyledHero>
         <Tours />
